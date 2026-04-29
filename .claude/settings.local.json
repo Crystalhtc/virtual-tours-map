@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -o '\\\\\\\\.[a-z-]*')",
+      "Bash(node -e ' *)",
+      "Bash(grep -v \"/$\")"
+    ]
+  }
+}
