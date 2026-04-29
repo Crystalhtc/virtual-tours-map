@@ -276,18 +276,15 @@ body {
   border-top: 1px solid rgba(255, 255, 255, 0.07);
 }
 
-.brand-name {
-  color: var(--color-moss);
-  font-size: 17px;
-  font-weight: 800;
-  line-height: 1;
-  letter-spacing: 0;
+.sidebar-branding .brand-logo {
+  width: min(130px, 100%);
+  margin-left: auto;
 }
 
-.brand-byline {
-  margin-top: 2px;
-  color: rgba(255, 255, 255, 0.38);
-  font-size: 11px;
+.brand-logo {
+  display: block;
+  width: min(180px, 100%);
+  height: auto;
 }
 
 .mobile-branding {
@@ -301,14 +298,8 @@ body {
   pointer-events: none;
 }
 
-.mobile-branding .brand-name {
-  font-size: 22px;
-  line-height: 1.1;
-}
-
-.mobile-branding .brand-byline {
-  margin-top: 3px;
-  color: rgba(255, 255, 255, 0.55);
+.mobile-branding .brand-logo {
+  width: min(150px, 100%);
 }
 
 /* Toggle button: inside sidebar header */
@@ -500,12 +491,8 @@ body {
     padding: 16px 14px;
   }
 
-  .brand-name {
-    font-size: 15px;
-  }
-
-  .brand-byline {
-    font-size: 10px;
+  .sidebar-branding .brand-logo {
+    width: min(116px, 100%);
   }
 }
 

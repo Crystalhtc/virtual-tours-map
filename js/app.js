@@ -17,8 +17,8 @@ const PARKS = [
 ];
 
 function PinSVG({ selected, pinScale = 1 }) {
-  const width = 18 * pinScale;
-  const height = 28 * pinScale;
+  const width = 22 * pinScale;
+  const height = 32 * pinScale;
 
   return (
     <svg
@@ -68,16 +68,25 @@ function App() {
 
     const cw = el.clientWidth;
     const ch = el.clientHeight;
-    const scale = Math.min(cw / IMG_W, ch / IMG_H) * 0.90;
+    const fitScale = Math.min(cw / IMG_W, ch / IMG_H);
+    const scale = fitScale * (mobile ? 2.35 : 1.35);
+    const sidebarSpace = mobile ? 0 : Math.min(440, Math.max(300, cw * 0.24));
+    const viewportCenterX = sidebarSpace + (cw - sidebarSpace) / 2;
+    const viewportCenterY = mobile ? 72 + (ch - 72 - 100) / 2 : ch / 2;
+    const focusX = IMG_W * (mobile ? 0.60 : 0.56);
+    const focusY = IMG_H * (mobile ? 0.66 : 0.48);
+    const x = viewportCenterX - focusX * scale;
+    const y = viewportCenterY - focusY * scale;
+
     baseMapScaleRef.current = scale;
     setStageSize({ width: cw, height: ch });
 
     setTf({
-      x: (cw - IMG_W * scale) / 2,
-      y: (ch - IMG_H * scale) / 2,
+      x,
+      y,
       scale
     });
-  }, [setTf]);
+  }, [mobile, setTf]);
 
   const zoomToward = useCallback((cx, cy, factor) => {
     setTf((t) => {
@@ -484,8 +493,7 @@ function MenuButton({ className, onClick }) {
 function Branding({ className = "" }) {
   return (
     <div className={className}>
-      <div className="brand-name">Discover Parks</div>
-      <div className="brand-byline">By BC Parks Foundation</div>
+      <img className="brand-logo" src="images/logo.svg" alt="Discover Parks by BC Parks Foundation" />
     </div>
   );
 }
