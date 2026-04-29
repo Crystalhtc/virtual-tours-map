@@ -148,10 +148,20 @@ function App() {
     if (mobile) setSheetState("collapsed");
   }, [mobile, setTf]);
 
-  const filtered = PARKS.filter((park) => {
-    const term = query.toLowerCase();
-    return park.name.toLowerCase().includes(term) || park.region.toLowerCase().includes(term);
-  });
+  const filtered = PARKS
+    .map((park, index) => {
+      const term = query.trim().toLowerCase();
+      const nameIndex = park.name.toLowerCase().indexOf(term);
+
+      return { park, index, nameIndex };
+    })
+    .filter(({ nameIndex }) => query.trim() === "" || nameIndex !== -1)
+    .sort((a, b) => {
+      if (query.trim() === "") return a.index - b.index;
+      if (a.nameIndex !== b.nameIndex) return a.nameIndex - b.nameIndex;
+      return a.index - b.index;
+    })
+    .map(({ park }) => park);
 
   useEffect(() => {
     const resize = () => {

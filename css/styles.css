@@ -42,19 +42,16 @@
 
   --color-moss: #e6ffa7;
   --color-moss-dark: #cee397;
-  --color-moss-transparent: rgba(200, 232, 64, 0.07);
-  --color-moss-focus: rgba(200, 232, 64, 0.6);
   --color-sunset: #ff7a65;
   --color-burnt-umber: #422628;
   --color-charcoal: #2a2828;
   --color-midnight: #08314c;
   --color-mist: #aae0e7;
   --color-white: #ffffff;
-  --color-white-muted: rgba(255, 255, 255, 0.3);
+  --color-white-muted: rgba(255, 255, 255, 0.4);
   --color-black: #000000;
   --color-map-bg: #d4e88a;
-  --color-panel: #1e2013;
-  --color-panel-hover: #2e3020;
+  --color-panel-hover: #3D3E35;
   --color-scrollbar: #3a3b28;
 
   /* --shadow-sidebar: 0 8px 40px rgba(0, 0, 0, 0.45), 0 2px 12px rgba(0, 0, 0, 0.3); */
@@ -189,7 +186,7 @@ body {
 }
 
 .park-pin:hover {
-  filter: brightness(1.15);
+  filter: brightness(1.3);
 }
 
 .park-pin svg {
@@ -221,7 +218,7 @@ body {
   border: 2px solid var(--color-moss);
   container-type: inline-size;
   overflow: hidden;
-  background: var(--color-panel);
+  background: var(--color-charcoal);
   border-radius: var(--radius-panel);
   box-shadow: var(--shadow-sidebar);
   transform: translateX(0);
@@ -295,7 +292,7 @@ body {
   left: 0;
   z-index: 700;
   padding: 18px 20px 14px;
-  background: var(--color-panel);
+  background: var(--color-charcoal);
   pointer-events: none;
 }
 
@@ -311,7 +308,7 @@ body {
   justify-content: center;
   width: var(--sidebar-toggle-size);
   height: var(--sidebar-toggle-size);
-  background: var(--color-panel);
+  background: var(--color-charcoal);
   border-radius: var(--radius-round);
   cursor: pointer;
   transition: background var(--sm-transition);
@@ -380,7 +377,7 @@ body {
 }
 
 .park-row:hover {
-  background: var(--color-moss-transparent);
+  background: var(--color-panel-hover);
 }
 
 .park-row-name {
@@ -530,7 +527,7 @@ body {
   font-size: var(--font-size-zoom);
   font-weight: 300;
   line-height: 1;
-  background: var(--color-panel);
+  background: var(--color-charcoal);
   border: none;
   cursor: pointer;
   transition: background var(--sm-transition);
@@ -605,7 +602,7 @@ body {
   justify-content: space-between;
   height: var(--popup-info-height);
   padding: var(--popup-content-padding);
-  background: var(--color-panel);
+  background: var(--color-charcoal);
 }
 
 .popup-region {
@@ -666,12 +663,12 @@ body {
 
 .search input {
   width: 100%;
-  padding: 15px 12px 15px 32px;
+  padding: 12px 12px 12px 32px;
   color: var(--color-white);
   font-family: inherit;
   font-size: 16px;
-  background: #2c2f1c;
-  border: 1px solid rgba(255, 255, 255, 0.09);
+  background: var(--color-charcoal);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 24px;
   transition: border-color 0.2s;
 }
@@ -681,7 +678,7 @@ input[type="text"]::placeholder {
 }
 
 input[type="text"]:focus {
-  border-color: var(--color-moss-focus) !important;
+  border-color: var(--color-moss) !important;
   outline: none;
 }
 
@@ -697,7 +694,7 @@ input[type="text"]:focus {
   flex-direction: column;
   height: var(--sheet-height);
   overflow: hidden;
-  background: var(--color-panel);
+  background: var(--color-charcoal);
   border-radius: var(--radius-panel) var(--radius-panel) 0 0;
   /* box-shadow: var(--shadow-bottom-sheet); */
   transition: height var(--panel-transition);
