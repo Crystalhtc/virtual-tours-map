@@ -29,9 +29,11 @@ function PinSVG({ selected, pinScale = 1 }) {
     >
       <path
         d="M15 0C6.72 0 0 6.72 0 15C0 26 15 40 15 40C15 40 30 26 30 15C30 6.72 23.28 0 15 0Z"
-        fill={selected ? "#E6FFA7" : "#FF7A65"}
+        fill="#2A2828"
+        strokeWidth="2"
+        vectorEffect="non-scaling-stroke"
       />
-      <circle cx="15" cy="14" r="5.5" fill="white" opacity="0.88" />
+      <circle cx="15" cy="14" r="5.5" fill="#e6ffa7" opacity="0.88" />
     </svg>
   );
 }
@@ -318,7 +320,7 @@ function App() {
       <div
         ref={mapStageRef}
         className="map-stage"
-        style={{ "--stage-top": mobile ? "72px" : "0", "--stage-bottom": stageBottom }}
+        style={{ "--stage-top": mobile ? "60px" : "0", "--stage-bottom": stageBottom }}
         onPointerDown={onPointerDown}
         onPointerMove={onPointerMove}
         onPointerUp={onPointerUp}

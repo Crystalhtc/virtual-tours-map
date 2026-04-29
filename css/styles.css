@@ -218,6 +218,7 @@ body {
   display: flex;
   flex-direction: column;
   width: clamp(260px, 32vw, 340px);
+  border: 2px solid var(--color-moss);
   container-type: inline-size;
   overflow: hidden;
   background: var(--color-panel);
