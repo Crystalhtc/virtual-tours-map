@@ -485,7 +485,7 @@ body {
 
   .search input {
     padding: 12px 10px 12px 30px;
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .sidebar-branding {
@@ -669,7 +669,7 @@ body {
   padding: 15px 12px 15px 32px;
   color: var(--color-white);
   font-family: inherit;
-  font-size: 14px;
+  font-size: 16px;
   background: #2c2f1c;
   border: 1px solid rgba(255, 255, 255, 0.09);
   border-radius: 24px;
