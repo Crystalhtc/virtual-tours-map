@@ -4,16 +4,16 @@ const IMG_W = window.__resources?.mapWidth || 7135;
 const IMG_H = window.__resources?.mapHeight || 7374;
 
 const PARKS = [
-  { id: "wells-gray", name: "Wells Gray Park", region: "Thompson-Nicola", px: 66.99, py: 55.30, img: "https://admin.discoverparks.ca/assets/2354f702-2f65-4dd2-8671-37a21dd67eb9" },
+  { id: "wells-gray", name: "Wells Gray Park", region: "Thompson-Nicola", px: 66.99, py: 53.30, img: "https://admin.discoverparks.ca/assets/2354f702-2f65-4dd2-8671-37a21dd67eb9" },
   { id: "tsutswecw-park", name: "Tsútswecw Park", region: "Columbia Shuswap", px: 67.58, py: 60.51, img: "https://admin.discoverparks.ca/assets/c7adde8f-d359-460e-93a9-2a7b654a37b3" },
   { id: "kikomun-creek-park", name: "Kikomun Creek Park", region: "East Kootenay", px: 82.86, py: 64.70, img: "https://admin.discoverparks.ca/assets/c9b012e6-711c-4517-b36d-73c5e9872d8f" },
   { id: "goldstream-park", name: "Goldstream Park", region: "Victoria", px: 48.85, py: 69.07, img: "https://admin.discoverparks.ca/assets/d3ef58fb-e7d3-49b3-8fc0-9e11c6d6bb55" },
-  { id: "cypress-park", name: "Cypress Park", region: "Greater Vancouver", px: 55.59, py: 66.74, img: "https://admin.discoverparks.ca/assets/1667b19b-9c04-43d1-a732-887d7169fd34" },
+  { id: "cypress-park", name: "Cypress Park", region: "Greater Vancouver", px: 54.59, py: 64.74, img: "https://admin.discoverparks.ca/assets/1667b19b-9c04-43d1-a732-887d7169fd34" },
   { id: "manning-park", name: "Manning Park", region: "Fraser Valley", px: 63.24, py: 67.61, img: "https://admin.discoverparks.ca/assets/d5ca8c88-cb24-4c78-8a08-5cecf9c95d84" },
-  { id: "macmillan-park", name: "MacMillan Park", region: "Nanaimo District", px: 45.66, py: 65.15, img: "https://admin.discoverparks.ca/assets/d10f9125-8e84-4c61-8352-9df3b66f14da" },
-  { id: "stawamus-chief-park", name: "Stawamus Chief Park", region: "Squamish", px: 51.50, py: 64.50, img: "https://admin.discoverparks.ca/assets/ffc3455a-a53e-403f-8a3e-00f7f5dd3335" },
-  { id: "porteau-cove-park", name: "Porteau Cove Park", region: "", px: 53.63, py: 65.86, img: "https://admin.discoverparks.ca/assets/2c776e13-f7a8-4ed0-89e3-7498871ccc24" },
-  { id: "rathtrevor-beach-park", name: "Rathtrevor Beach Park", region: "", px: 47.91, py: 65.15, img: "https://admin.discoverparks.ca/assets/9fb159fd-b04b-401f-ad1a-966eed40ff9d" }
+  { id: "macmillan-park", name: "MacMillan Park", region: "Nanaimo District", px: 44.66, py: 65.15, img: "https://admin.discoverparks.ca/assets/d10f9125-8e84-4c61-8352-9df3b66f14da" },
+  { id: "stawamus-chief-park", name: "Stawamus Chief Park", region: "Squamish", px: 51.50, py: 62.50, img: "https://admin.discoverparks.ca/assets/ffc3455a-a53e-403f-8a3e-00f7f5dd3335" },
+  { id: "porteau-cove-park", name: "Porteau Cove Park", region: "", px: 52.63, py: 63.86, img: "https://admin.discoverparks.ca/assets/2c776e13-f7a8-4ed0-89e3-7498871ccc24" },
+  { id: "rathtrevor-beach-park", name: "Rathtrevor Beach Park", region: "", px: 47.91, py: 66.15, img: "https://admin.discoverparks.ca/assets/9fb159fd-b04b-401f-ad1a-966eed40ff9d" }
 ];
 
 function PinSVG({ selected, pinScale = 1 }) {
@@ -464,6 +464,7 @@ function App() {
             y: transform.y + IMG_H * selected.py / 100 * transform.scale + (mobile ? 72 : 0)
           }}
           minBottom={mobile ? getMobilePopupBottom(sheetState) : 0}
+          avoidLeft={mobile || !sidebarOpen ? 8 : getSidebarSafeRight(window.innerWidth)}
           scale={popupScale}
           onClose={() => setSelected(null)}
         />
@@ -563,7 +564,12 @@ function ParkList({ parks, selected, onSelect }) {
   );
 }
 
-function ParkPopup({ park, pos, onClose, minBottom = 0, scale = 1 }) {
+function getSidebarSafeRight(viewportWidth) {
+  const sidebarWidth = Math.min(340, Math.max(260, viewportWidth * 0.32));
+  return 16 + sidebarWidth + 16;
+}
+
+function ParkPopup({ park, pos, onClose, minBottom = 0, avoidLeft = 8, scale = 1 }) {
   const viewportWidth = window.innerWidth;
   const viewportHeight = window.innerHeight;
   const baseWidth = 305;
@@ -576,7 +582,7 @@ function ParkPopup({ park, pos, onClose, minBottom = 0, scale = 1 }) {
   let left = pos.x - width / 2;
   let top = pos.y - totalHeight - Math.round(18 * actualScale);
 
-  left = Math.max(8, Math.min(left, viewportWidth - width - 8));
+  left = Math.max(avoidLeft, Math.min(left, viewportWidth - width - 8));
   top = Math.max(minTop, Math.min(top, viewportHeight - totalHeight - minBottom - 8));
 
   if (top + totalHeight > viewportHeight - minBottom - 8) {
