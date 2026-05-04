@@ -1,5 +1,5 @@
 window.__resources = {
-  mapBg: "images/map-bc-vector.svg",
-  mapWidth: 2048,
-  mapHeight: 2732
+  mapBg: "images/map-bc-vector-v2.svg",
+  mapWidth: 1969.76,
+  mapHeight: 2045.06
 };

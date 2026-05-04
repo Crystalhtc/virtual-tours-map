@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Map" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1969.76 2045.06">
+  <polygon points="150.01 154.59 555.47 278 1086.54 372.75 1379.62 403.6 1361.99 908.23 1350.98 1263.01 1452.34 1326.92 1555.91 1481.17 1626.43 1520.84 1674.91 1606.78 1758.64 1690.51 1778.48 1805.1 1840.18 1871.21 1520.65 1871.21 1295.89 1871.21 1079.93 1855.78 1027.04 1822.73 1035.86 1796.29 1016.03 1787.47 1020.43 1736.79 995.09 1758.83 965.34 1692.72 931.22 1708.14 892.62 1681.7 908.05 1631.02 879.4 1617.79 767.02 1584.74 784.65 1538.46 698.71 1518.63 661.24 1485.58 698.71 1443.71 663.45 1412.86 634.8 1313.7 603.95 1291.66 581.91 1218.94 606.15 1161.65 568.69 1146.22 531.23 1075.71 553.27 1055.87 513.6 1027.19 529.03 978.75 551.06 983.15 608.36 826.7 493.77 727.53 421.05 405.81 392.4 385.97 365.96 255.96 293.24 262.57 255.78 304.44 200.69 313.25 150.01 154.59" style="fill: #4d4d4d;"/>
+  <polygon points="392.4 1269.62 368.16 1205.72 392.4 1150.63 346.13 1150.63 369.27 1126.39 421.05 1027.19 383.59 1027.19 361.55 1080.11 340.99 1065.42 365.96 1048.53 368.16 1027.19 310.14 991.97 303.52 1064.69 329.23 1106.56 327.76 1139.61 338.78 1144.02 334.38 1184.42 352 1235.83 380.65 1278.44 392.4 1269.62" style="fill: #4d4d4d;"/>
+  <polygon points="960.94 1895.45 931.22 1787.47 850.76 1736.79 795.66 1624.4 597.34 1509.82 562.08 1509.82 562.08 1540.67 597.34 1540.67 625.99 1562.7 599.54 1573.72 599.54 1608.98 648.02 1626.61 656.84 1653.05 683.28 1655.26 733.96 1702.63 698.71 1702.63 761.51 1761.03 761.51 1800.69 822.11 1800.69 813.29 1820.53 841.94 1849.17 931.22 1895.45 960.94 1895.45" style="fill: #4d4d4d;"/>
+  <polygon points="982.97 1866.8 953.25 1758.83 872.79 1708.14 817.7 1595.76 619.38 1481.17 584.12 1481.17 584.12 1512.02 619.38 1512.02 648.02 1534.06 621.58 1545.07 621.58 1580.33 670.06 1597.96 678.87 1624.4 705.32 1626.61 756 1673.99 720.74 1673.99 783.54 1732.38 783.54 1772.05 844.14 1772.05 835.33 1791.88 863.98 1820.53 953.25 1866.8 982.97 1866.8" style="fill: #e6ffa7;"/>
+  <polygon points="414.44 1240.98 390.2 1177.07 414.44 1121.98 368.16 1121.98 391.3 1097.74 443.09 998.54 405.63 998.54 383.59 1051.47 363.02 1036.77 388 1019.88 390.2 998.54 332.17 963.32 325.56 1036.04 351.27 1077.91 349.8 1110.96 360.82 1115.37 356.41 1155.77 374.04 1207.19 402.69 1249.79 414.44 1240.98" style="fill: #e6ffa7;"/>
+  <path d="M1800.51,1776.45l-19.83-114.59-83.74-83.74-48.48-85.94-70.52-39.67-103.57-154.25-101.37-63.9,28.65-859.41-293.08-30.85-531.07-94.76L172.04,125.95l50.68,158.66,55.09-8.81,37.46-41.87,72.72-6.61,26.44,130.01,28.65,19.83,72.72,321.73,114.59,99.16-57.29,156.46-22.04-4.41-15.43,48.44,39.67,28.69-22.04,19.83,37.46,70.52,37.46,15.43-24.24,57.29,22.04,72.72,30.85,22.04,28.65,99.16,35.26,30.85-37.46,41.87,37.46,33.05,85.94,19.83-17.63,46.28,112.38,33.05,28.65,13.22-15.43,50.68,38.59,26.44,34.13-15.43,29.75,66.11,25.34-22.04-4.41,50.68,19.83,8.81-8.81,26.44,52.89,33.05,96.78,6.91,119.17,8.51h544.29l-61.7-66.11Z" style="fill: #e6ffa7;"/>
+  <g id="Roads">
+    <polyline points="1078.02 1792.73 1138.79 1829.72 1208.8 1787.45 1220.96 1708.18 1210.13 1673.99 1233.91 1598.53 1310.53 1624.4 1358.09 1624.4 1379.23 1598.53 1399.46 1598.53 1399.46 1624.4 1494.16 1586.94 1549.65 1548.33 1560.22 1519.26 1590.6 1525.87 1630.24 1556.25 1661.94 1525.87" style="fill: none; stroke: #2a2828; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <polyline points="584.12 1044.99 630.16 1063.48 712.07 1044.99 741.14 985.54 805.87 956.48 836.26 1035.74 853.43 1081.98 882.49 1062.16 914.66 1112.36 1051.59 1159.92 1128.22 1188.99 1155.96 1174.46 1200.88 1188.99 1232.58 1188.99 1270.9 1214.09 1401.66 1320.31 1424.14 1311.85 1469.06 1334.68 1498.82 1334.68" style="fill: none; stroke: #2a2828; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <polyline points="1233.91 1598.53 1212.77 1557.57 1243.15 1475.67 1179.74 1421.67 1157.28 1358.09 1162.57 1299.96 1175.78 1278.44 1157.28 1240.51 1155.96 1174.46 1162.57 1135.2 1142.75 1022.53 1166.53 972.33 1249.76 956.48 1358.09 948.55 1310.53 874.57 1228.62 776.81 1203.52 770.2 1177.1 681.69 1206.16 616.95 1207.48 533.72 1179.74 516.55 1142.75 544.29 1070.09 539.01 1033.1 508.62 1009.32 515.23 995.09 435.96 931.37 384.44 883.81 314.42 824.31 293.39 799.26 289.32 793.46 358.02 783.54 406.9 750.38 409.54 716.04 453.14 710.75 546.93 689.61 578.64 689.61 610.35 656.84 647.34 656.84 708.11 694.9 775.48 692.26 825.69 735.85 899.67 761.51 926.09 767.57 973.67" style="fill: none; stroke: #2a2828; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <polyline points="1590.6 1525.87 1610.42 1564.18 1646.09 1586.94 1679.12 1640.8 1700.25 1737.24 1700.25 1754.42 1679.12 1761.02 1700.25 1779.52 1700.25 1812.55 1672.51 1842.56 1655.34 1829.72 1577.95 1848.22 1570.79 1829.72 1539.08 1821.79 1536.44 1804.62 1474.35 1842.56 1369.98 1835.01 1331.67 1809.9 1290.71 1780.84 1278.26 1811.71 1259.67 1823.12 1208.8 1787.45 1277.5 1694.97 1310.53 1624.4" style="fill: none; stroke: #2a2828; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <polyline points="1344.88 1624.4 1358.09 1646.44 1392.44 1653.05 1404.33 1674.49 1388.47 1702.63 1387.15 1729.32 1358.09 1747.81 1374.6 1784.8 1369.98 1835.01" style="fill: none; stroke: #2a2828; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <polyline points="1536.44 1804.62 1550.97 1787.45 1568.14 1787.45 1577.95 1768.95 1595.89 1768.95" style="fill: none; stroke: #2a2828; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <polyline points="1401.66 1320.31 1427.78 1373.28 1404.33 1456.51 1410 1476.33 1369.98 1502.09 1344.88 1495.15 1332.66 1560.55 1309.35 1624.4" style="fill: none; stroke: #2a2828; stroke-miterlimit: 10; stroke-width: 2px;"/>
+  </g>
+  <g id="Towns">
+    <circle cx="583.35" cy="1045.07" r="5.7" style="fill: #e6ffa7; stroke: #2a2828; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <circle cx="712.35" cy="1045.07" r="5.7" style="fill: #e6ffa7; stroke: #2a2828; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <circle cx="835.5" cy="1037.03" r="5.7" style="fill: #e6ffa7; stroke: #2a2828; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <circle cx="1156.67" cy="1176.54" r="5.7" style="fill: #e6ffa7; stroke: #2a2828; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <circle cx="1247.78" cy="955.37" r="5.7" style="fill: #e6ffa7; stroke: #2a2828; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <circle cx="1358.09" cy="947.88" r="5.7" style="fill: #e6ffa7; stroke: #2a2828; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <circle cx="1308.7" cy="873.45" r="5.7" style="fill: #e6ffa7; stroke: #2a2828; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <circle cx="1206.77" cy="532.18" r="5.7" style="fill: #e6ffa7; stroke: #2a2828; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <circle cx="630.8" cy="807.02" r="5.7" style="fill: #e6ffa7; stroke: #2a2828; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <circle cx="810.12" cy="1348.04" r="5.7" style="fill: #e6ffa7; stroke: #2a2828; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <circle cx="1162.36" cy="1305.41" r="5.7" style="fill: #e6ffa7; stroke: #2a2828; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <circle cx="1179.13" cy="1421.67" r="5.7" style="fill: #e6ffa7; stroke: #2a2828; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <circle cx="1309.35" cy="1624.4" r="5.7" style="fill: #e6ffa7; stroke: #2a2828; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <circle cx="1103.37" cy="1653.05" r="5.7" style="fill: #e6ffa7; stroke: #2a2828; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <circle cx="1398.61" cy="1624.4" r="5.7" style="fill: #e6ffa7; stroke: #2a2828; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <circle cx="1498.82" cy="1586.94" r="5.7" style="fill: #e6ffa7; stroke: #2a2828; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <circle cx="1277" cy="1692.74" r="5.7" style="fill: #e6ffa7; stroke: #2a2828; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <circle cx="1404.3" cy="1679.68" r="5.7" style="fill: #e6ffa7; stroke: #2a2828; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <circle cx="1387.63" cy="1729.71" r="5.7" style="fill: #e6ffa7; stroke: #2a2828; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <circle cx="1375.68" cy="1781.09" r="5.7" style="fill: #e6ffa7; stroke: #2a2828; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <circle cx="1566.16" cy="1786.79" r="5.7" style="fill: #e6ffa7; stroke: #2a2828; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <circle cx="1474.31" cy="1842.56" r="5.7" style="fill: #e6ffa7; stroke: #2a2828; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <circle cx="1536.44" cy="1804.62" r="5.7" style="fill: #e6ffa7; stroke: #2a2828; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <circle cx="1680.23" cy="1757.7" r="5.7" style="fill: #e6ffa7; stroke: #2a2828; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <circle cx="1700.25" cy="1781.09" r="5.7" style="fill: #e6ffa7; stroke: #2a2828; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <circle cx="1168.06" cy="1810.32" r="5.7" style="fill: #e6ffa7; stroke: #2a2828; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <circle cx="1083.71" cy="1793.23" r="5.7" style="fill: #e6ffa7; stroke: #2a2828; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <circle cx="982.97" cy="1866.8" r="5.7" style="fill: #e6ffa7; stroke: #2a2828; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <circle cx="951" cy="1757.7" r="5.7" style="fill: #e6ffa7; stroke: #2a2828; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <circle cx="873.26" cy="1757.7" r="5.7" style="fill: #e6ffa7; stroke: #2a2828; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <circle cx="861.87" cy="1687.04" r="5.7" style="fill: #e6ffa7; stroke: #2a2828; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <circle cx="840.57" cy="1641.66" r="5.7" style="fill: #e6ffa7; stroke: #2a2828; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <circle cx="677.58" cy="1513.57" r="5.7" style="fill: #e6ffa7; stroke: #2a2828; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <circle cx="394.84" cy="1025.63" r="5.7" style="fill: #e6ffa7; stroke: #2a2828; stroke-miterlimit: 10; stroke-width: 2px;"/>
+  </g>
+</svg>

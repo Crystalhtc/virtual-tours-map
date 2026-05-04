@@ -4,16 +4,16 @@ const IMG_W = window.__resources?.mapWidth || 7135;
 const IMG_H = window.__resources?.mapHeight || 7374;
 
 const PARKS = [
-  { id: "wells-gray", name: "Wells Gray Park", region: "Thompson-Nicola", px: 66.99, py: 53.30, img: "https://admin.discoverparks.ca/assets/2354f702-2f65-4dd2-8671-37a21dd67eb9" },
-  { id: "tsutswecw-park", name: "Tsútswecw Park", region: "Columbia Shuswap", px: 67.58, py: 60.51, img: "https://admin.discoverparks.ca/assets/c7adde8f-d359-460e-93a9-2a7b654a37b3" },
-  { id: "kikomun-creek-park", name: "Kikomun Creek Park", region: "East Kootenay", px: 82.86, py: 64.70, img: "https://admin.discoverparks.ca/assets/c9b012e6-711c-4517-b36d-73c5e9872d8f" },
-  { id: "goldstream-park", name: "Goldstream Park", region: "Victoria", px: 48.85, py: 69.07, img: "https://admin.discoverparks.ca/assets/d3ef58fb-e7d3-49b3-8fc0-9e11c6d6bb55" },
-  { id: "cypress-park", name: "Cypress Park", region: "Greater Vancouver", px: 54.59, py: 64.74, img: "https://admin.discoverparks.ca/assets/1667b19b-9c04-43d1-a732-887d7169fd34" },
-  { id: "manning-park", name: "Manning Park", region: "Fraser Valley", px: 63.24, py: 67.61, img: "https://admin.discoverparks.ca/assets/d5ca8c88-cb24-4c78-8a08-5cecf9c95d84" },
-  { id: "macmillan-park", name: "MacMillan Park", region: "Nanaimo District", px: 44.66, py: 65.15, img: "https://admin.discoverparks.ca/assets/d10f9125-8e84-4c61-8352-9df3b66f14da" },
-  { id: "stawamus-chief-park", name: "Stawamus Chief Park", region: "Squamish", px: 51.50, py: 62.50, img: "https://admin.discoverparks.ca/assets/ffc3455a-a53e-403f-8a3e-00f7f5dd3335" },
-  { id: "porteau-cove-park", name: "Porteau Cove Park", region: "", px: 52.63, py: 63.86, img: "https://admin.discoverparks.ca/assets/2c776e13-f7a8-4ed0-89e3-7498871ccc24" },
-  { id: "rathtrevor-beach-park", name: "Rathtrevor Beach Park", region: "", px: 47.91, py: 66.15, img: "https://admin.discoverparks.ca/assets/9fb159fd-b04b-401f-ad1a-966eed40ff9d" }
+  { id: "wells-gray", name: "Wells Gray Park", region: "Thompson-Nicola", px: 67.29, py: 69.47, img: "https://admin.discoverparks.ca/assets/2354f702-2f65-4dd2-8671-37a21dd67eb9" },
+  { id: "tsutswecw-park", name: "Tsútswecw Park", region: "Columbia Shuswap", px: 67.90, py: 79.12, img: "https://admin.discoverparks.ca/assets/c7adde8f-d359-460e-93a9-2a7b654a37b3" },
+  { id: "kikomun-creek-park", name: "Kikomun Creek Park", region: "East Kootenay", px: 83.78, py: 84.70, img: "https://admin.discoverparks.ca/assets/c9b012e6-711c-4517-b36d-73c5e9872d8f" },
+  { id: "goldstream-park", name: "Goldstream Park", region: "Victoria", px: 48.44, py: 90.51, img: "https://admin.discoverparks.ca/assets/d3ef58fb-e7d3-49b3-8fc0-9e11c6d6bb55" },
+  { id: "cypress-park", name: "Cypress Park", region: "Greater Vancouver", px: 54.41, py: 84.75, img: "https://admin.discoverparks.ca/assets/1667b19b-9c04-43d1-a732-887d7169fd34" },
+  { id: "manning-park", name: "Manning Park", region: "Fraser Valley", px: 63.41, py: 88.57, img: "https://admin.discoverparks.ca/assets/d5ca8c88-cb24-4c78-8a08-5cecf9c95d84" },
+  { id: "macmillan-park", name: "MacMillan Park", region: "Nanaimo District", px: 44.09, py: 85.27, img: "https://admin.discoverparks.ca/assets/d10f9125-8e84-4c61-8352-9df3b66f14da" },
+  { id: "stawamus-chief-park", name: "Stawamus Chief Park", region: "Squamish", px: 51.20, py: 81.75, img: "https://admin.discoverparks.ca/assets/ffc3455a-a53e-403f-8a3e-00f7f5dd3335" },
+  { id: "porteau-cove-park", name: "Porteau Cove Park", region: "", px: 52.38, py: 83.57, img: "https://admin.discoverparks.ca/assets/2c776e13-f7a8-4ed0-89e3-7498871ccc24" },
+  { id: "rathtrevor-beach-park", name: "Rathtrevor Beach Park", region: "", px: 47.46, py: 86.63, img: "https://admin.discoverparks.ca/assets/9fb159fd-b04b-401f-ad1a-966eed40ff9d" }
 ];
 
 function PinSVG({ selected, pinScale = 1 }) {
@@ -70,15 +70,23 @@ function App() {
 
     const cw = el.clientWidth;
     const ch = el.clientHeight;
+    const narrowMobile = mobile && window.innerWidth <= 430;
     const fitScale = Math.min(cw / IMG_W, ch / IMG_H);
-    const scale = fitScale * (mobile ? 2.35 : 1.35);
+    const scale = fitScale * (mobile ? narrowMobile ? 2.3 : 2.35 : 1.35);
     const sidebarSpace = mobile ? 0 : Math.min(440, Math.max(300, cw * 0.24));
     const viewportCenterX = sidebarSpace + (cw - sidebarSpace) / 2;
     const viewportCenterY = mobile ? 72 + (ch - 72 - 100) / 2 : ch / 2;
-    const focusX = IMG_W * (mobile ? 0.60 : 0.56);
-    const focusY = IMG_H * (mobile ? 0.66 : 0.48);
+    const focusX = IMG_W * (mobile ? narrowMobile ? 0.635 : 0.60 : 0.56);
+    const focusY = IMG_H * (mobile ? 0.86 : 0.62);
     const x = viewportCenterX - focusX * scale;
-    const y = viewportCenterY - focusY * scale;
+    const rawY = viewportCenterY - focusY * scale;
+    const maxPinY = Math.max(...PARKS.map((park) => rawY + IMG_H * park.py / 100 * scale));
+    const narrowMobileDesiredOffset = Math.min(132, Math.max(88, ch * 0.28));
+    const narrowMobileMaxOffset = Math.max(0, ch - 24 - maxPinY);
+    const narrowMobileYOffset = narrowMobile
+      ? Math.min(narrowMobileDesiredOffset, narrowMobileMaxOffset)
+      : 0;
+    const y = rawY + narrowMobileYOffset;
 
     baseMapScaleRef.current = scale;
     setStageSize({ width: cw, height: ch });
