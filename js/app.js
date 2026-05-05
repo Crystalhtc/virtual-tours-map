@@ -6,14 +6,16 @@ const IMG_H = window.__resources?.mapHeight || 7374;
 const PARKS = [
   { id: "wells-gray", name: "Wells Gray Park", region: "Thompson-Nicola", px: 67.29, py: 69.47, img: "https://admin.discoverparks.ca/assets/2354f702-2f65-4dd2-8671-37a21dd67eb9" },
   { id: "tsutswecw-park", name: "Tsútswecw Park", region: "Columbia Shuswap", px: 67.90, py: 79.12, img: "https://admin.discoverparks.ca/assets/c7adde8f-d359-460e-93a9-2a7b654a37b3" },
-  { id: "kikomun-creek-park", name: "Kikomun Creek Park", region: "East Kootenay", px: 83.78, py: 84.70, img: "https://admin.discoverparks.ca/assets/c9b012e6-711c-4517-b36d-73c5e9872d8f" },
+  { id: "kikomun-creek-park", name: "Kikomun Creek Park", region: "East Kootenay", px: 83.78, py: 87.70, img: "https://admin.discoverparks.ca/assets/c9b012e6-711c-4517-b36d-73c5e9872d8f" },
   { id: "goldstream-park", name: "Goldstream Park", region: "Victoria", px: 48.44, py: 90.51, img: "https://admin.discoverparks.ca/assets/d3ef58fb-e7d3-49b3-8fc0-9e11c6d6bb55" },
   { id: "cypress-park", name: "Cypress Park", region: "Greater Vancouver", px: 54.41, py: 84.75, img: "https://admin.discoverparks.ca/assets/1667b19b-9c04-43d1-a732-887d7169fd34" },
   { id: "manning-park", name: "Manning Park", region: "Fraser Valley", px: 63.41, py: 88.57, img: "https://admin.discoverparks.ca/assets/d5ca8c88-cb24-4c78-8a08-5cecf9c95d84" },
   { id: "macmillan-park", name: "MacMillan Park", region: "Nanaimo District", px: 44.09, py: 85.27, img: "https://admin.discoverparks.ca/assets/d10f9125-8e84-4c61-8352-9df3b66f14da" },
   { id: "stawamus-chief-park", name: "Stawamus Chief Park", region: "Squamish", px: 51.20, py: 81.75, img: "https://admin.discoverparks.ca/assets/ffc3455a-a53e-403f-8a3e-00f7f5dd3335" },
   { id: "porteau-cove-park", name: "Porteau Cove Park", region: "", px: 52.38, py: 83.57, img: "https://admin.discoverparks.ca/assets/2c776e13-f7a8-4ed0-89e3-7498871ccc24" },
-  { id: "rathtrevor-beach-park", name: "Rathtrevor Beach Park", region: "", px: 47.46, py: 86.63, img: "https://admin.discoverparks.ca/assets/9fb159fd-b04b-401f-ad1a-966eed40ff9d" }
+  { id: "rathtrevor-beach-park", name: "Rathtrevor Beach Park", region: "", px: 47.46, py: 86.63, img: "https://admin.discoverparks.ca/assets/9fb159fd-b04b-401f-ad1a-966eed40ff9d" },
+  { id: "lac-du-bois-park", name: "Lac du Bois Grasslands Protected Area", region: "Thompson-Nicola", px: 66.46, py: 79.63, img: "https://admin.discoverparks.ca/assets/210ca8a8-84fa-46d9-9241-ab881ea860bb" },
+  { id: "whiteswan-lake-park", name: "Whiteswan Lake Park", region: "East Kootenay", px: 87.76, py: 83.63, img: "https://admin.discoverparks.ca/assets/652b8204-2cfb-4154-bc85-b958e2f8ddad" }
 ];
 
 function PinSVG({ selected, pinScale = 1 }) {
