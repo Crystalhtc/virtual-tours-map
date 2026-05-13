@@ -16,7 +16,8 @@ const PARKS = [
   { id: "rathtrevor-beach-park", name: "Rathtrevor Beach Park", region: "", px: 47.46, py: 86.63, img: "https://admin.discoverparks.ca/assets/9fb159fd-b04b-401f-ad1a-966eed40ff9d" },
   { id: "lac-du-bois-park", name: "Lac du Bois Grasslands Protected Area", region: "Thompson-Nicola", px: 66.46, py: 79.63, img: "https://admin.discoverparks.ca/assets/210ca8a8-84fa-46d9-9241-ab881ea860bb" },
   { id: "whiteswan-lake-park", name: "Whiteswan Lake Park", region: "East Kootenay", px: 88.76, py: 83.63, img: "https://admin.discoverparks.ca/assets/652b8204-2cfb-4154-bc85-b958e2f8ddad" },
-  { id: "wasa-lake-park", name: "Wasa Lake Park", region: "East Kootenay", px: 87.76, py: 84.63, img: "https://admin.discoverparks.ca/assets/89c8813b-6054-49b2-a7f8-6ff888bd4733" }
+  { id: "wasa-lake-park", name: "Wasa Lake Park", region: "East Kootenay", px: 86.76, py: 86.63, img: "https://admin.discoverparks.ca/assets/89c8813b-6054-49b2-a7f8-6ff888bd4733" },
+  { id: "premier-lake-park", name: "Premier Lake Park", region: "East Kootenay", px: 87.76, py: 85.23, img: "https://admin.discoverparks.ca/assets/b0c17c3b-29ec-4399-99e2-d1793a91eee2" },
 ];
 
 function PinSVG({ selected, pinScale = 1 }) {
