@@ -19,6 +19,7 @@ const PARKS = [
   { id: "wasa-lake-park", name: "Wasa Lake Park", region: "East Kootenay", px: 86.76, py: 86.63, img: "https://admin.discoverparks.ca/assets/89c8813b-6054-49b2-a7f8-6ff888bd4733" },
   { id: "premier-lake-park", name: "Premier Lake Park", region: "East Kootenay", px: 87.76, py: 85.23, img: "https://admin.discoverparks.ca/assets/b0c17c3b-29ec-4399-99e2-d1793a91eee2" },
   { id: "moyie-lake-park", name: "Moyie Lake Park", region: "Cranbrook", px: 89.76, py: 88.83, img: "https://admin.discoverparks.ca/assets/8693f194-c5da-45f2-baae-25d5986a2f39" },
+  { id: "golden-ears-park", name: "Golden Ears Park", region: "Greater Vancouver", px: 57.41, py: 86.75, img: "https://admin.discoverparks.ca/assets/1667b19b-9c04-43d1-a732-887d7169fd34" },
 ];
 
 function PinSVG({ selected, pinScale = 1 }) {
